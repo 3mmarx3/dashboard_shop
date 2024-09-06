@@ -72,27 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // remove item
-document
-  .getElementById("discountForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    var code = document.getElementById("discountCode").value;
-    var value = document.getElementById("discountValue").value;
-    var newRow =
-      "<tr><td>" +
-      code +
-      "</td><td>" +
-      value +
-      '</td><td><button class="custom-delete-btn">Delete</button></td></tr>';
-    document.getElementById("discountTable").innerHTML += newRow;
-    document.getElementById("discountForm").reset();
-  });
-
-document.addEventListener("click", function (event) {
-  if (event.target && event.target.className == "custom-delete-btn") {
-    event.target.parentNode.parentNode.remove();
-  }
-});
 
 // end script 1
 

@@ -184,3 +184,8 @@ a.d-flex.align-items-center.nav-link {
 .offcanvas-body {
   justify-content: center;
 }
+
+span.badge.bg-success.position-absolute.m-3.bg_red {
+  background: red !important;
+  cursor: pointer;
+}
