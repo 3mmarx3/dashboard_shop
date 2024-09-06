@@ -1,0 +1,166 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+}
+
+
+
+
+
+.main_div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 75vh;
+    gap: 20px;
+    margin-top: 5vh;
+}
+
+
+.titel {
+    padding: 20px;
+}
+
+
+.d-flex.flex-column.flex-lg-row.h-lg-full.bg-surface-secondary {
+    display: grid !important;
+    grid-template-columns: 1fr 5fr;
+}
+
+
+
+.block_div input[type="url"] {
+    background: no-repeat;
+    color: white;
+}
+
+.block_div input[type="url"]::placeholder{
+    color: white;
+}
+ input[type="url"]:focus{
+border: none !important;
+outline: none !important;
+}
+
+
+.flex_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.block_div input[type="submit"] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: white;
+    color: #5c60f5;
+}
+
+::-webkit-scrollbar{
+width: 0;
+}
+.contener {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+
+}
+
+
+
+
+
+.del_slide {
+    width: 50px;
+    height: 50px;
+    background: #5c60f5;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+.img {
+    border: 1px dashed #5c60f5;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+.img_slide {
+border: 1px dashed #5c60f5;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+}
+
+.linke {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.linke input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.sub input[type="submit"] {
+    background: black;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.but {
+    width: 20% !important;
+    padding: 15px !important;
+
+}
+.main {
+    background: white !important;
+}
+
+
+main.py-6.bg-surface-secondary {
+    background: #f5f9fc !important;
+}
+
+
+.profile.content,.scting.content {
+    background: white;
+} 
+
+div#sidebarCollapse {
+    position: fixed;
+}
+
+
+

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/dashboard/style/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .border {
+            width: 10px;
+            height: 50px;
+            border-left: 2px dashed #6f42c1;
+            margin-left: 4%;
+        }
+
+        .flex_customer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .div_ p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex {
+            display: grid;
+            align-items: center;
+            justify-content: revert;
+            grid-template-columns: 2fr 1fr;
+        }
+
+
+        .order-header {
+            background-color: #6f42c1;
+            color: white;
+            padding: 20px;
+            margin-bottom: 5vh;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .order-header h1 {
+            margin: 0;
+        }
+
+        .order-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .order-details {
+            width: 60%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .note,
+        .totals {
+            margin-top: 20px;
+        }
+
+        .note p {
+            padding: 10px;
+            border-left: 5px solid #6f42c1;
+        }
+
+        .totals p {
+            margin: 5vh 0;
+            text-align: right;
+        }
+
+        .order-status {
+            width: 35%;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .order-status h2 {
+            margin-top: 0;
+        }
+
+        .order-status ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .order-status ul li {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        .order {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .color_span {
+            width: 10px;
+            height: 10px;
+            background: red;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .img_order {
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            border: 1px solid #6f42c1;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .order-status ul li i {
+            color: #6f42c1;
+        }
+
+        .customer-details {
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        .customer-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_">
+
+        <div class="order-content">
+
+            <div class="order-details">
+                <div class="order-header">
+                    <h1>Order </h1>
+                    <p>July 27, 2022 at 09:44 AM</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>price</th>
+                            <th>Quantity</th>
+
+                            <th>Total</th>
+                            <th>color</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="order">
+                                <div class="img_order" style="background-image: url();"></div>
+                                <p>Venus Dashboard Builder PRO</p>
+                            </td>
+                            <td>
+                                <p>20</p>
+                            </td>
+                            <td>
+                                <p>5</p>
+                            </td>
+                            <td>
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <div class="color_span"></div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="order">
+                                <div class="img_order" style="background-image: url();"></div>
+                                <p>Venus Dashboard Builder PRO</p>
+                            </td>
+                            <td>
+                                <p>20</p>
+                            </td>
+                            <td>
+                                <p>5</p>
+                            </td>
+                            <td>
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <div class="color_span"></div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="order">
+                                <div class="img_order" style="background-image: url();"></div>
+                                <p>Venus Dashboard Builder PRO</p>
+                            </td>
+                            <td>
+                                <p>20</p>
+                            </td>
+                            <td>
+                                <p>5</p>
+                            </td>
+                            <td>
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <div class="color_span"></div>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="flex">
+                    <div class="note">
+                        <p>Note: Ship all the ordered items together by Friday and send you an email update check.
+                            Thanks!</p>
+                    </div>
+                    <div class="totals">
+                        <p>Total: $395.00</p>
+                        <p><strong>Order Total: $405.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-status">
+                <h2>Order Status</h2>
+                <div class="rounded shadow-sm bg-card">
+                    <div class="h-64 rounded-top overflow-hidden bg-cover"
+                        style="background-image:url(/dashboard/img/covers/img-profile.jpg);background-position:center center">
+                    </div>
+                    <div class="px-6 pb-6">
+                        <div class="row g-0 align-items-end">
+                            <div class="col-auto">
+                                <div class="avatar avatar-2xl border border-body border-4 mt-n10 img_order"
+                                    style="background-image: url(/dashboard/img/covers/img-profile.jpg);"></div>
+                            </div>
+                            <div class="col ps-4 pt-4">
+                                <h6 class="text-xs text-uppercase text-muted mb-1">Overview</h6>
+                                <h1 class="h2">Tahlia Mooney</h1>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <ul>
+
+
+
+
+
+                    <div class="customer-details">
+
+
+                        <div class="flex_customer">
+                            <p>email user:</p>
+                            <p>ammar132004@gmail.com</p>
+                        </div>
+                        <div class="flex_customer">
+                            <p><strong>phone user</strong></p>
+                            <p>01070479599</p>
+                        </div>
+                        <div class="flex_customer">
+                            <p>Order Date:</p>
+                            <p> 27/07/2022</p>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
